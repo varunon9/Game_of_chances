@@ -1,0 +1,73 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<title>Game Of Chances</title>
+		<link rel="stylesheet" type="text/css" href="css/style_index.css"/>
+		<style>
+			body{
+			  background:url('images/dark-wood.jpg');
+			}
+		</style>
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<header>
+			<section>
+				<h2>WELCOME TO</h2>
+				<h1>GAME OF CHANCES</h1>
+			</section>
+		</header>
+		<section id="wish">
+			<h2>HAPPY NEW YEAR 2015</h2>
+		</section>
+		<section>
+			<h3>PLEASE WAIT WHILE THE GAME IS BEING LOADED</h3>
+		</section>
+		<footer>
+			<figure id="1">
+				<img src="images/a.png" alt="loading"/>
+			</figure>
+			<figure id="2">
+				<img src="images/b.png" alt="loading"/>
+			</figure>
+			<figure id="3">
+				<img src="images/c.png" alt="loading"/>
+			</figure>
+			<figure id="4">
+				<img src="images/ca.png" alt="loading"/>
+			</figure>
+			<figure id="5">
+				<img src="images/d.png" alt="loading"/>
+			</figure>
+			<script>
+			       var elementid=1;var count=0;var max=6;
+				   for(var i=2;i<6;i++)
+					   document.getElementById(i).style.display='none';
+				   $(document).ready(function()
+				   {
+				       var myv=setInterval(function(){loading()},800); 
+				   });
+                   function loading(){
+				        
+				        document.getElementById(elementid).style.display ='none';
+						elementid++;
+						if(elementid==max)
+						{
+							elementid=1;
+							//alert("testing");
+						}
+		                document.getElementById(elementid).style.display = '';
+						
+                   }
+			  </script>
+			  <section id="redirect">
+				   <h4><a href="game.html">Click here if loading takes place more than 5 seconds...</a></h4>
+			  </section>
+			  <script type="text/javascript">
+					var rep=setTimeout(function(){
+						window.location.replace("game.html");
+						},5000);
+			  </script>
+		</footer>
+	</body>
+</html>

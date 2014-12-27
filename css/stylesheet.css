@@ -1,0 +1,180 @@
+header,section,figure,article,footer{
+  display:block;
+}
+body{
+  color:white;
+  text-align:center;
+  overflow:scroll;
+}
+#cards{
+  font-size:3em;
+  color:black;
+}
+.flip3d {
+  width:240px; 
+  height:200px;
+  margin:10px;
+  float:left; 
+}
+.flip3d >.front {
+       position:absolute;
+	   -webkit-transform:perspective(600px) rotateY(0deg);
+	   -ms-transform:perspective(600px) rotateY(0deg);
+	   -o-transform:perspective(600px) rotateY(0deg);
+	   -moz-transform:perspective(600px) rotateY(0deg);
+	   transform:perspective(600px) rotateY(0deg);
+	   background:#FC0; width:240px; height:200px;border-radius:7px;
+	   -webkit-backface-visibility:hidden;
+	   -ms-backface-visibility:hidden;
+	   -o-backface-visibility:hidden;
+	   backface-visibility:hidden;
+	    transition:-webkit-transform 0.5s linear 0s;
+		transition:-ms-transform 0.5s linear 0s;
+		transition:-o-transform 0.5s linear 0s;
+	   transition:transform 0.5s linear 0s;
+	   }
+.flip3d >.back {
+       position:absolute;
+	   -webkit-transform:perspective(600px) rotateY(180deg);
+	   -moz-transform:perspective(600px) rotateY(180deg);
+	   -ms-transform:perspective(600px) rotateY(180deg);
+	   -o-transform:perspective(600px) rotateY(180deg);
+	   transform:perspective(600px) rotateY(180deg);
+	   
+	   background:#80BFFF; width:240px; height:200px;border-radius:7px;
+	   -webkit-backface-visibility:hidden;
+	   -moz-backface-visibility:hidden;
+	   -ms-backface-visibility:hidden;
+	   -o-backface-visibility:hidden;
+	   backface-visibility:hidden;
+	   transition:-webkit-transform 0.5s linear 0s;
+	   transition:-moz-transform 0.5s linear 0s;
+	   transition:-ms-transform 0.5s linear 0s;
+	   transition:-o-transform 0.5s linear 0s;
+	   transition:transform 0.5s linear 0s;
+	   color:purple;
+	   }
+.flip3d:hover >.front{
+       -webkit-transform:perspective(600px) rotateY(-180deg);
+	   -moz-transform:perspective(600px) rotateY(-180deg);
+	   -o-transform:perspective(600px) rotateY(-180deg);
+	   -ms-transform:perspective(600px) rotateY(-180deg);
+       transform:perspective(600px) rotateY(-180deg);
+	   
+	   }
+.flip3d:hover >.back{
+       -webkit-transform:perspective(600px) rotateY(0deg);
+	   -ms-transform:perspective(600px) rotateY(0deg);
+	   -o-transform:perspective(600px) rotateY(0deg);
+	   -moz-transform:perspective(600px) rotateY(0deg);
+       transform:perspective(600px) rotateY(0deg);
+	   }
+#form,#greet,#chances{
+  text-align:left;
+  font-size:1.5em;
+}
+#chances{
+  //display:none;
+}
+#play{
+  //display:none;
+}
+#wheel{
+  background-color:darkblue;
+  height:100px;
+  width:100px;
+  border-radius:50%;
+  animation:change_color 48s 12s infinite linear alternate;
+  -webkit-animation:change_color 48s 12s infinite linear alternate;
+  -o-animation:change_color 48s 12s infinite linear alternate;
+  -ms-animation:change_color 48s 12s infinite linear alternate;
+}
+@keyframes change_color {                                               
+       0% {
+	       background-color:darkblue;
+		   }
+	   25% {
+	       background-color:purple;
+		  }
+	   50% {
+	       background-color:red;
+		  }
+	    75% {
+	       background-color:silver;
+		  }
+		100% {
+	       background-color:teal;
+		  }
+}
+@-o-keyframes change_color {                                               
+       0% {
+	       background-color:darkblue;
+		   }
+	   25% {
+	       background-color:purple;
+		  }
+	   50% {
+	       background-color:red;
+		  }
+	    75% {
+	       background-color:silver;
+		  }
+		100% {
+	       background-color:teal;
+		  }
+}
+@-moz-keyframes change_color {                                               
+       0% {
+	       background-color:darkblue;
+		   }
+	   25% {
+	       background-color:purple;
+		  }
+	   50% {
+	       background-color:red;
+		  }
+	    75% {
+	       background-color:silver;
+		  }
+		100% {
+	       background-color:teal;
+		  }
+}
+@-webkit-keyframes change_color {                                               
+       0% {
+	       background-color:darkblue;
+		   }
+	   25% {
+	       background-color:purple;
+		  }
+	   50% {
+	       background-color:red;
+		  }
+	    75% {
+	       background-color:silver;
+		  }
+		100% {
+	       background-color:teal;
+		  }
+}
+@-ms-keyframes change_color {                                               
+       0% {
+	       background-color:darkblue;
+		   }
+	   25% {
+	       background-color:purple;
+		  }
+	   50% {
+	       background-color:red;
+		  }
+	    75% {
+	       background-color:silver;
+		  }
+		100% {
+	       background-color:teal;
+		  }
+}
+footer{
+  text-align:left;
+  font-size:1.5em;
+}

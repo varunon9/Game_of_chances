@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game Of Chances</title>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+		<style>
+			body{
+			  background:url('images/dark-wood.jpg');
+			}
+		</style>
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/javascript.js">
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>GAME OF CHANCES</h1>
+			<h3 style="color:green;">CHECK HOW LUCKY YOU ARE...!</h3>
+		</header>
+		<section id="cards">
+	         <section class="flip3d">
+				<div class="back">32
+					<p>Points</p>
+				</div>
+				<div class="front">0
+					
+				</div>
+             </section>
+			 <section class="flip3d">
+				<div class="back">77
+					<p>Points</p>
+				</div>
+				<div class="front">6
+				</div>
+             </section>
+			 <section class="flip3d">
+				<div class="back">5
+					<p>Points</p>
+				</div>
+				<div class="front">13
+				</div>
+             </section>
+			 <section class="flip3d">
+				<div class="back">81
+					<p>Points</p>
+				</div>
+				<div class="front">44
+				</div>
+             </section>
+			 <section class="flip3d">
+				<div class="back">21
+					<p>Points</p>
+				</div>
+				<div class="front">97
+				</div>
+             </section>
+		</section>
+		<section>
+			<h2>Bring the cursor to the cards to check points.</h2>
+		</section>
+		<section id="form">
+			<form action="#" method="" name="myform" id="myform">
+				Enter your name:
+				<input type="text" size="30" maxlength="40" id="name"/>
+				<br/>
+				<button onclick="show_name();">OK</button>
+			
+			</form>
+		</section>
+		<section id="greet">
+		</section>
+		<section id="chances">
+		</section>
+		<section id="play">
+			<center>
+				<a href="#footer"><section id="wheel" onclick="start();"></section></a>
+			</center>
+			<script>document.getElementById('play').style.display='none';</script>
+		</section>
+		<footer>
+			<section id="lucky_no">
+			</section>
+			<section id="points">
+			</section>
+			<section id="result">
+			</section>
+			<script>
+				//document.getElementById('lucky_no').style.display='none';
+			</script>
+		</footer>
+	</body>
+</html>

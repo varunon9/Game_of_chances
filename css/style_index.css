@@ -1,0 +1,21 @@
+header,section,figure,article,footer{
+  display:block;
+}
+body{
+  text-align:center;
+  color:white;
+}
+header h1{
+  font-size:3em;
+}
+header h2{
+  font-size:2em;
+}
+#wish h2{
+  font-size:2em;
+  color: rgba(160, 175, 242, 1);
+}
+#redirect a{
+  //font-weight:italic;
+  color:purple;
+}
