@@ -73,7 +73,7 @@
 		</section>
 		<section id="play">
 			<center>
-				<a href="#footer"><section id="wheel" onclick="start();"></section></a>
+				<a href="#bottom"><section id="wheel" onclick="start();"></section></a>
 			</center>
 			<script>document.getElementById('play').style.display='none';</script>
 		</section>
@@ -84,9 +84,18 @@
 			</section>
 			<section id="result">
 			</section>
+			<section id="final_result">
+			</section>
 			<script>
 				//document.getElementById('lucky_no').style.display='none';
 			</script>
+			<audio id="audio_tag">
+ 		 	<source src="media/alarm_tone.ogg" type="audio/ogg">
+  		 	<source src="media/alarm_tone.mp3" type="audio/mpeg">
+			<source src="media/alarm_tone.wav" type="audio/wav">
+		 	Your browser does not support the audio element.
+		    </audio>
+			<a id="bottom"></a>
 		</footer>
 	</body>
 </html>
